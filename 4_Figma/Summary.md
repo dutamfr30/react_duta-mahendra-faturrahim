@@ -1,0 +1,3 @@
+1. Figma adalah editor grafik vektor dan alat pembuatan prototipe yang terutama berbasis web, dengan fitur offline tambahan yang diaktifkan oleh aplikasi desktop untuk macOS dan Windows
+2. Figma memiliki kelebihan, beberapa diantaranya adalah Free atau gratis dan dapat digunakan hingga dua pengguna dan tiga projek setiap akunnya, Real Time Collaboration yang artinya dapat melakukan kolaborasi dengan orang lain secara online diwaktu yang sama, dan Dapat berjalan di MAC dan PC.
+3. Figma juga memiliki kekurangan yaitu mengharuskan penggunanya online atau tersambung ke internet untuk dapat bekerja dan mengakses Figma
