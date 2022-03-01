@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sign Up</title>
+</head>
+<body>
+    <h1>Buat Account Baru!</h1>
+    <h2>Sign Up Form</h2>
+    <form>
+        <div>
+            <p>
+                <label for="first-name">First name:</label>
+                <br/>
+                <input id="first-name" name="firstName" type="text" placeholder="First name..." required="">
+            </p>        
+        </div>
+        <div>
+            <p>
+                <label for="last-name">Last name:</label>
+                <br/>
+                <input id="last-name" name="lastName" type="text" 
+                placeholder="Last name..." required="">
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="Male" required="">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="Female" required="">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="Other" required="">
+                <label for="other">Other</label>
+                <label for="cars">Choose a car:</label>
+            </p>    
+        </div>
+        <div>
+            <p>
+                <label for="nasionality">Nasionality:</label><br>
+                <select name="nasionality" id="nasionality" required="">
+                    <option value=""></option>
+                    <option value="indonesian">Indonesian</option>
+                    <option value="malaysian">Malaysian</option>
+                    <option value="singapore">Singapore</option>
+                    <option value="timor leste">Timor Leste</option>
+                    </select>
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="language">Language:</label><br>
+                <input type="checkbox" id="language1" name="language1" value="Bahasa Indonesia">
+                <label for="language1"> Bahasa Indonesia</label><br>
+                <input type="checkbox" id="language2" name="language2" value="English">
+                <label for="language2"> English</label><br>
+                <input type="checkbox" id="language3" name="language3" value="Other">
+                <label for="language3"> Other</label><br>
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="bio">Bio:</label><br>
+                <input type="text" required=""><br/>
+                <input type="submit" value="Submit">
+
+            </p>
+        </div>
+    </form>
+</body>
+</html>
