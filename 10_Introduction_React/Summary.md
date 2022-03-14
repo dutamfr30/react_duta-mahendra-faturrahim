@@ -12,10 +12,10 @@
 - DOM manipulation secara manual dapat membuat code berantakan.
 - Sulit untuk mengingat DOM state sebelumnya.
 - Jauh lebih lambat daripada operasi javascript pada umumnya. 
-6. Tools yang diperlukan sebelum membuat Aplikasi React
+7. Tools yang diperlukan sebelum membuat Aplikasi React
 - **Browser**: browser yang digunakan bebas. 
 - **Text Editor / IDE**: Digunakan untuk membuat serta mengubah code pada aplikasi yang ingin dikembangkan. Contohnya VS code
 - **Command Line Shell**: Pada windows, dapat menggunakan cmd & power shell. Selain itu, juga dapat menggunakan terminal window jika menggunakan macOS atau linux.
-7. Untuk membuat aplikasi React dengan cara menginstall node.js, lalu buat aplikasi react.js dengan menggunakan CRA
+8. Untuk membuat aplikasi React dengan cara menginstall node.js, lalu buat aplikasi react.js dengan menggunakan CRA
 (npx create-react-app [nama_project])
 
