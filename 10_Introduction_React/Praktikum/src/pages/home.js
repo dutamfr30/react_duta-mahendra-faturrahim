@@ -1,7 +1,5 @@
 import React from 'react';
 
-const defaultProps = {};
-
 const Home = () => {
   return (
     <React.Fragment>

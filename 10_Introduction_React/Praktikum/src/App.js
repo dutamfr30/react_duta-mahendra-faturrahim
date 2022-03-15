@@ -6,7 +6,7 @@ import Contact_us from './pages/contact_us'
 function App() {
   return (
     <div className="App">
-      {<Home />}
+      <Home />
       <Contact_us />
     </div>
   );
