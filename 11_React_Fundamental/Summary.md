@@ -21,28 +21,28 @@ Komponen React adalah bagian kode yang dapat digunakan kembali untuk menentukan 
     * Required pada class component
     * Pure function. Tidak boleh ada setState()
 - componentDidMount()
-    => Dipanggil ketika component sudah di render untuk pertama kali
-    => Tempat yang tepat untuk pemanggilan API
-    => Boleh ada setState()
+    * Dipanggil ketika component sudah di render untuk pertama kali
+    * Tempat yang tepat untuk pemanggilan API
+    * Boleh ada setState()
 - componentDidUpdate()
-    => Dipanggil ketika terjadi update (props atau state berubah)
+    * Dipanggil ketika terjadi update (props atau state berubah)
 - componentWIllUnmount()
-    => Dipanggil ketika component akan dihancurkan
-    => Cocok untuk clean up actions
+    * Dipanggil ketika component akan dihancurkan
+    * Cocok untuk clean up actions
 8. **Render Bersyarat**
 Pada React, kita dapat membuat komponen berbeda yang mencakup perilaku yang dibutuhkan. Lalu kita dapat me-render hanya beberapa bagian saja, berdasarkan state dari aplikasi kita.
-    => Menggunkaan if 
-    => Inline if dengan operator &&
-    => Inline if-Else dengan ternary conditional operator
-    => Mencegah komponen untuk rendering
+    * Menggunkaan if 
+    * Inline if dengan operator &&
+    * Inline if-Else dengan ternary conditional operator
+    * Mencegah komponen untuk rendering
 9. **Render List**
 Kita dapat membangun koleksi dari beberapa elemen dan menyertakannya dalam JSX menggunakan tanda kurung kurawal {}
 10. **Key**
 Key membantu React untuk mengidentifikasi item mana yang telah diubah, ditambahkan, atau dihilangkan. Key harus diberikan di dalam elemen yang terdapat di dalam sebuah senarai untuk memberikan elemen tersebut identitas yang stabil. Cara terbaik untuk menentukan key yang akan digunakan adalah menggunakan string unik untuk mengidentifikasikan item dalam sebuah list dari list item lain yang menjadi saudaranya. Biasanya sering menggunakan ID dari data Anda sebagai key.
 11. **Struktur Direktori**
 - Jenis Pengelompokan folder
-    => Pengelompokan berdasarkan fitur atau rute
-    => Pengelompokan berdasarkan jenis file
+    * Pengelompokan berdasarkan fitur atau rute
+    * Pengelompokan berdasarkan jenis file
 - Hindari terlalu banyak nesting
 - Jangan mengabiskan banyak waktu karena telalu lama memikirkan struktur file
 12. **Styling**
