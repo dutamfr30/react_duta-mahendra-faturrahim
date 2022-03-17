@@ -17,9 +17,9 @@ Komponen React adalah bagian kode yang dapat digunakan kembali untuk menentukan 
 - Props pada component adalah read-only dan tidak dapat diubah. Perlu diingat bahwa props diberikan oleh parent component ke children component. Jadi children component tidak dapat mengubah props.
 7. **React Lifecycle**
 - render()
-    => Merupakan fungsi yang paling sering dipakai
-    => Required pada class component
-    => Pure function. Tidak boleh ada setState()
+    * Merupakan fungsi yang paling sering dipakai
+    * Required pada class component
+    * Pure function. Tidak boleh ada setState()
 - componentDidMount()
     => Dipanggil ketika component sudah di render untuk pertama kali
     => Tempat yang tepat untuk pemanggilan API
