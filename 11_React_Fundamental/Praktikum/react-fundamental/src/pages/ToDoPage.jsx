@@ -6,7 +6,7 @@ export default function ToDoPage({listApp}) {
     return (
         <>
             <Header text="To Do App"/>
-            {listApp.map((list)=> <Body list={list}/>)}
+            {listApp.map((list) => <Body list={list}/>)}
         </>
     )
 }
