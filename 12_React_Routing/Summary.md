@@ -12,8 +12,10 @@ Jika tidak ada yang cocok, maka Route yang akan dirender yaitu Route terakhir de
 
 **React** menggunakan method ReactDom.render() untuk me-render root component kita ke dalam DOM, kode tersebut terdapat di index.js. 
 
+**Link** digunakan untuk berpindah antar halaman, property to tersebut merujuk pada path di route yang akan dituju.
+
 **Parameter URL.** adalah suatu parameter yang nilainya ditetapkan secara dinamis di URL halaman. Kegunaan URL Parameter 
-*Paginasi
+* Paginasi
 * Penyortiran
 * Penyaringan 
 * Pencarian
@@ -21,7 +23,7 @@ Jika tidak ada yang cocok, maka Route yang akan dirender yaitu Route terakhir de
 
 **useHistory** memberi kita akses ke instance riwayat yang dapat Anda gunakan untuk bernavigasi.
 Contoh:
-*length
+* length
 * go
 * goBack
 * goForward
