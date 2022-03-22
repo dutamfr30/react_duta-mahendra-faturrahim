@@ -1,0 +1,27 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    text-align: center;
+    background: -webkit-linear-gradient(30deg, rgba(250,205,72,1) 40%, rgba(152,235,97,1) 50%, rgb(55, 135, 242) 60%);
+    background-clip: text;
+    color: transparent;
+}
+
+form {
+    text-align: center;
+}
+
+.listItem{
+    color: red;
+    border-bottom: 5px;
+}
+
+.todoForm {
+    margin: 2rem;
+    text-align: center;
+}
+
+.todoInput{
+    border-radius: 10px;
+}
+
