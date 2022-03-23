@@ -1,19 +1,17 @@
 // import './Todos.css';
 
 const TodoList = (props) => {
-    console.log(props.dataTodos)
+    console.log(props)
 
     return (
         <div>
-            <form>
-                <ul className="listItem">{
-                    props.dataTodos.map((data) => {
-                        return <li key={data.id}>{data.title}</li>
-                    })            
-                }</ul>
-            </form>
+            {
+           props.dataTodos.map((todo) => {
+               return <div key={todo.id}>{todo.title}</div>
+           })
+            }
         </div>
-    )
+    );
 }
 
 export default TodoList;

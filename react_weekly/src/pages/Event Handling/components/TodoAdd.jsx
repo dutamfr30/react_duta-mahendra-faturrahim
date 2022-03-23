@@ -2,30 +2,37 @@ import './Todos.css';
 import { useState } from "react";
 
 const TodoAdd = (props) => {
-    const [getInput, setInput] = useState('')
+    const [input, setInput] = useState('')
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        
         const newTodo = {
-            id: Math.floor(Math.random() * 100) + 1,
-            title: getInput
+            id: Math.floor(Math.random() * 100) +1, 
+            title: input, 
+            completed: false
         }
-
         props.onAddTodo(newTodo)
+
+        setInput('')
 
         // console.log(newTodo)
     }
 
     const handleInput = (e) => {
         setInput(e.target.value)
-        // console.log(getInput)
+        console.log(input)
     }
 
     return (
         <form className='todoForm' onSubmit={handleSubmit}>
-            <input onChange={handleInput} className="todoInput" type="text" placeholder="Add todo..." />
-            <button type="submit">Add</button>
+            <input
+            value={input} 
+            onChange={handleInput} 
+            className="todoInput" 
+            type="text" 
+            placeholder="Add todo..." 
+            />
+            <button type="submit" className="todoButton">Submit</button>
         </form>
     )
 }
