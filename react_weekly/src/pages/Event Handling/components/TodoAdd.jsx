@@ -2,25 +2,16 @@ import './Todos.css';
 import { useState } from "react";
 
 const TodoAdd = (props) => {
-    const [input, setInput] = useState('')
+    const [input, setInput] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        const newTodo = {
-            id: Math.floor(Math.random() * 100) +1, 
-            title: input, 
-            completed: false
-        }
-        props.onAddTodo(newTodo)
-
-        setInput('')
-
-        // console.log(newTodo)
+        props.onAddTodo(input)
+        setInput("")
     }
 
     const handleInput = (e) => {
         setInput(e.target.value)
-        console.log(input)
     }
 
     return (

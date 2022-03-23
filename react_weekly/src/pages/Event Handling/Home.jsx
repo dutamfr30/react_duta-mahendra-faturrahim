@@ -19,9 +19,14 @@ export default function Home(props) {
         }
     ])
 
-    const eventAddTodo = (todo) => {
-        setData(getData.concat(todo))
-        // console.log(eventAddTodo)
+    const eventAddTodo = (title) => {
+        let id = '3';
+        if(getData.length > 0) {
+            id = getData[0].id + 1
+        }
+        let todo = {id: id, title: title, completed: false}
+        let newTodo = [todo, ...getData]
+        setData(newTodo)
     };
 
     const eventRemoveTodo = (id) => {
@@ -43,15 +48,16 @@ export default function Home(props) {
         <div>
             <Title />
             <TodoAdd onAddTodo={eventAddTodo} />
-            <TodoList dataTodos={getData} />
-            {/* {getData.map(() => {
+            {getData.map((todo) => {
                 return (
                     <TodoList 
-                    dataTodos={getData}
-                    key={getData.id}
+                    removeTodo={eventRemoveTodo}
+                    completeTodo={eventCompleteTodo}
+                    todo={todo}
+                    key={todo.id}
                     />
                 )
-            })} */}
+            })}
         </div>
         )
     
