@@ -20,9 +20,9 @@ export default function Home(props) {
     ])
 
     const eventAddTodo = (title) => {
-        let id = '3';
+        let id = 1;
         if(getData.length > 0) {
-            id = getData[0].id + 1
+            id = getData.length + 1
         }
         let todo = {id: id, title: title, completed: false}
         let newTodo = [todo, ...getData]
@@ -48,16 +48,18 @@ export default function Home(props) {
         <div>
             <Title />
             <TodoAdd onAddTodo={eventAddTodo} />
-            {getData.map((todo) => {
+            {getData.map((todo, index) => {
                 return (
                     <TodoList 
                     removeTodo={eventRemoveTodo}
                     completeTodo={eventCompleteTodo}
                     todo={todo}
+                    index={index}
                     key={todo.id}
                     />
                 )
             })}
+            {console.log(getData)}
         </div>
         )
     

@@ -5,13 +5,14 @@ const TodoAdd = (props) => {
     const [input, setInput] = useState("");
 
     const handleSubmit = (e) => {
-        e.preventDefault()
-        props.onAddTodo(input)
-        setInput("")
+        e.preventDefault();
+        props.onAddTodo(input);
+        setInput("");
     }
 
     const handleInput = (e) => {
-        setInput(e.target.value)
+        
+        setInput(e.target.value);
     }
 
     return (
@@ -21,7 +22,8 @@ const TodoAdd = (props) => {
             onChange={handleInput} 
             className="todoInput" 
             type="text" 
-            placeholder="Add todo..." 
+            placeholder="Add todo..."
+            required
             />
             <button type="submit" className="todoButton">Submit</button>
         </form>

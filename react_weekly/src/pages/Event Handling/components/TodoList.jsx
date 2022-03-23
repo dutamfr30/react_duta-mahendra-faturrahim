@@ -4,7 +4,7 @@ import { RiCheckboxCircleLine } from "react-icons/ri";
 
 const TodoList = (props) => {
     console.log(props)
-    const { todo, removeTodo, completeTodo } = props 
+    const { todo, removeTodo, completeTodo, index } = props 
 
     return (
         <div className={todo.completed ? "todoList complete" : "todoList"}>
