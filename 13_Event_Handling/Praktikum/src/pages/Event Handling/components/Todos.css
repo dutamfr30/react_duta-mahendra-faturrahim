@@ -1,0 +1,64 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    text-align: center;
+    background: -webkit-linear-gradient(30deg, rgba(250,205,72,1) 40%, rgba(152,235,97,1) 50%, rgb(55, 135, 242) 60%);
+    background-clip: text;
+    color: transparent;
+}
+
+form {
+    text-align: center;
+}
+
+.complete{
+    text-decoration: line-through;
+}
+
+.listItem{
+    color: red;
+    border-bottom: 5px;
+}
+
+.todoForm {
+    margin: 2rem;
+    text-align: center;
+}
+
+.todoInput{
+    padding: 14px 32px 14px 16px;
+    border-radius: 20px 0 0 20px;
+    border: 2px solid rgba(152,235,97,1);
+    border-right: none;
+    outline: none;
+    width: 320px;
+}
+
+.todoButton {
+    font-weight: bold;
+    padding: 14px;
+    border: 2px solid rgba(152,235,97,1);
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    background: white;
+    color: grey;
+    text-transform: capitalize;
+}
+
+.todoList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: black;
+    background: linear-gradient(
+        60deg,
+        rgba(20, 159, 255,1) 30%,
+        rgb(158, 243, 78, 1) 80%
+    );
+    padding: 15px;
+    border-radius: 10px;
+    width: 90%;
+}
+
