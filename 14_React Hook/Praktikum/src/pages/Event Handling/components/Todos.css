@@ -48,7 +48,6 @@ form {
 
 .todoList{
     display: flex;
-    display: ;
     justify-content: space-between;
     align-items: center;
     margin: 4px auto;

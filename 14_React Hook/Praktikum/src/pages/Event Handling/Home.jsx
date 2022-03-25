@@ -54,6 +54,7 @@ export default function Home(props) {
                     removeTodo={eventRemoveTodo}
                     completeTodo={eventCompleteTodo}
                     todo={todo}
+                    index={index}
                     key={todo.id}
                     />
                 )
