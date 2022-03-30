@@ -5,7 +5,7 @@ import TodoAdd from './components/TodoAdd';
 import TodoList from './components/TodoList';
 import './components/Todos.css';
 
-export default function Home(props) {
+export default function ReactHook (props) {
     const [getData, setData] = useState([
         {
             id:  1,

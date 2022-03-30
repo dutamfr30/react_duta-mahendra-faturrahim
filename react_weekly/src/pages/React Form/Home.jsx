@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useRef } from "react";
-import './components/Style.css';
+
 
 function Home () {
     const baseData = {

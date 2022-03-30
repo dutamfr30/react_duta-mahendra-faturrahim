@@ -4,7 +4,7 @@ import HeaderRoute from '../components/HeaderRoute';
 import BodyRoute from '../components/BodyRoute';
 import './components/Route.css';
 
-export default function Home(props) {
+export default function ReactRouting(props) {
     return (
         <div id="App">
             <Sidebar />

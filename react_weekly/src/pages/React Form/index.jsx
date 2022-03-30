@@ -1,8 +1,7 @@
 import React from 'react';
 import { useState, useRef } from "react";
-import './components/Style.css';
 
-function Home () {
+function ReactForm () {
     const baseData = {
         nama: "",
         email: "",
@@ -189,4 +188,4 @@ function Home () {
     )
 }
 
-export default Home;
+export default ReactForm;

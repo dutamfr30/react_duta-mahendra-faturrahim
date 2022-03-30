@@ -1,13 +1,14 @@
 // import ToDoPage from './pages/ToDoPage';
 // import { mockList } from './mockData';
 // import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import Home from './pages/React Form';
+import ReactForm from './pages/React Form';
+import "bootstrap/dist/css/bootstrap.css";
 
 
 function App() {
   return (
     <div>
-      <Home />
+      <ReactForm />
     </div>
   );
 }
