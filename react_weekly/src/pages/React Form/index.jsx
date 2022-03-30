@@ -74,7 +74,7 @@ function ReactForm () {
         else {
             alert("Data Pendaftar Tidak Sesuai")
         }
-        event.preventDefault()
+        // event.preventDefault()
     }
 
     const handleRadioButton = (event) => {
@@ -130,9 +130,9 @@ function ReactForm () {
                 <label className={"inputText"}>
                     No Handphone:
                     <input 
-                    minLength="11"
-                    maxLength="13"
-                    type="number"
+                    minLength="9"
+                    maxLength="14"
+                    type="text"
                     name="noHandphone" 
                     required
                     onChange={handleInput}
@@ -160,11 +160,11 @@ function ReactForm () {
                 </label><br></br>
 
                 <label >Kelas Coding yang Dipilih:</label>
-                <select style={{width: "100%", height: 25, borderRadius: 5, marginBottom: 5}} value={data.kelas} >
-                    <option>Pilih Salah Satu Program</option>
-                    <option>Coding Backend with Golang</option>
-                    <option>Coding Frontend with ReactJS</option>
-                    <option>Fullstack Developer</option>
+                <select style={{width: "100%", height: 25, borderRadius: 5, marginBottom: 5}} value="1" >
+                    <option value="1">Pilih Salah Satu Program</option>
+                    <option value="Backend">Coding Backend with Golang</option>
+                    <option value="Frontend">Coding Frontend with ReactJS</option>
+                    <option value="Fullstack">Fullstack Developer</option>
                 </select><br></br>
 
                 <label>
