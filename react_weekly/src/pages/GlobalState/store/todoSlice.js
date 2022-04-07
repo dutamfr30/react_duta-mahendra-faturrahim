@@ -14,22 +14,21 @@ const initialValue = [
 ];
 
 export const todoSlice = createSlice({
-    name: "todo",
+    name: "passenger",
     initialState: {
-        todoos: initialValue
+        passengers: initialValue
     },
     reducers: {
         addTodo: (state, action) => {
             let id = 1;
-            if(state.todoos.length > 0) {
-                id = state.todoos.length + 1
+            if(state.passengers.length > 0) {
+                id = state.passengers.length + 1
             }
-            let todo = {id: id, title: action, completed: false}
-            let newTodo = [todo, ...action.payload]
-            state.todoos = [...state.todoos, newTodo]
+            let todo = {id: id, title: action.payload, completed: false}
+            state.passengers = [...state.passengers, todo]
         },
         removeTodo: (state, action) => {
-            state.todos = state.todos.filter((todo) => {
+            state.passengers = state.passengers.filter((todo) => {
                 return todo.id !== action.payload;
             })
         },

@@ -5,16 +5,19 @@ import { RiCloseCircleLine } from "react-icons/ri";
 import { RiCheckboxCircleLine } from "react-icons/ri";
 
 const TodoList = (props) => {
-   const todos = useSelector((state) => state.todo.todoos)
+   const passengers = useSelector((state) => state.passenger.passengers)
    const dispatch = useDispatch()
 
     return (
         // <div className={todo.completed ? "todoList complete" : "todoList"}>
         <div>
-            {todos.map((todo) => (
-                {todos},
-                <RiCloseCircleLine style={{marginRight : 5}} removeTodo={() => {dispatch(removeTodo(todo.id))
+            {passengers.map((todo) => (
+                <div>
+                    {passengers},
+                    <RiCloseCircleLine style={{marginRight : 5}} onClick={() => {dispatch(removeTodo(todo.id));
                 }}/>
+                </div>
+                
                 
             ))}
             {/* <div className="iconsContainer"> */}
