@@ -13,18 +13,17 @@ const TodoList = () => {
         <>
             {passengers.map((todo) => (
                 <div className={todo.completed ? "todoList complete" : "todoList"}>
-                    {todo.title}
-                    <div className="iconsContainer">
-                    <RiCloseCircleLine 
-                    style={{marginRight : 5}} 
-                    onClick={() => {
-                        dispatch(removeTodo(todo.id));
-                    }}/>
-                    <RiCheckboxCircleLine 
+                    <RiCheckboxCircleLine
+                    style={{marginLeft : 10}}  
                     onClick={() => {
                         dispatch(completedTodo(todo.id));
                     }}/>
-                    </div>
+                    {todo.title}
+                    <RiCloseCircleLine 
+                    style={{marginRight : 10}} 
+                    onClick={() => {
+                        dispatch(removeTodo(todo.id));
+                    }}/>
                 </div>
                 ))}
         </>

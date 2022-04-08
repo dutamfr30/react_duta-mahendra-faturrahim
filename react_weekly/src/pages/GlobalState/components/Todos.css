@@ -15,11 +15,6 @@ form {
     text-decoration: line-through;
 }
 
-.listItem{
-    color: red;
-    border-bottom: 5px;
-}
-
 .todoForm {
     margin: 2rem;
     text-align: center;
@@ -61,5 +56,7 @@ form {
     padding: 15px;
     border-radius: 10px;
     width: 50%;
+    font-size: larger;
+    text-align: center;
 }
 
