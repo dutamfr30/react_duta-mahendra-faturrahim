@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Title from './components/Title';
 import TodoAdd from './components/TodoAdd';
 import TodoList from './components/TodoList';
-import './components/Todos.css';
+
 
 export default function EventHandling (props) {
     const [getData, setData] = useState([

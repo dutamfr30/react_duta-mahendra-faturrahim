@@ -11,28 +11,31 @@ export default function Sidebar() {
                     Home
                 </a>
 
-                <a className="menu-item" href="#">
+                <a className="menu-item" href="/introduction-react">
                     Introduction React
                 </a>
 
-                <a className="menu-item" href="#">
+                <a className="menu-item" href="/react-fundamental">
                     React Fundamental
                 </a>
 
-                <a className="menu-item" href="#">
+                <a className="menu-item" href="/react-routing">
                     React Routing
                 </a>
 
-                <a className="menu-item" href="#">
+                <a className="menu-item" href="/event-handling">
                     Event Handling
                 </a>
 
-                <a className="menu-item" href="#">
+                <a className="menu-item" href="/react-hook">
                     React Hook
                 </a>
 
-                <a className="menu-item" href="#">
+                <a className="menu-item" href="/react-form">
                     React Form
+                </a>
+                <a className="menu-item" href="/global-state">
+                    Global State
                 </a>
             </Menu>
             {/* <Link to="/" className="menu-item">

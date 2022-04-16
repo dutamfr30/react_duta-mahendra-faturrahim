@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState, useRef } from "react";
-import { Radio, RadioGroup } from '@chakra-ui/react';
 
 function ReactForm () {
     const baseData = {
@@ -105,11 +104,11 @@ function ReactForm () {
     }
 
     return (
-        <div style={{margin: "10px 100px"}}>
+        <div style={{margin: "10px 100px"}} className="">
                 <h1 style={{textAlign: "center"}}>Pendaftaran Peserta Coding Bootcamp</h1>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label >
+                    <label style={{width: "100%", textAlign: "start"}}>
                         Nama Lengkap:
                         <br/>
                         <input 
@@ -124,7 +123,7 @@ function ReactForm () {
                 </label>
 
                 </div>
-                <label className={"inputText"}>
+                <label style={{width: "100%", textAlign: "start"}}>
                     Email:
                     <input 
                     type="email" 
@@ -137,7 +136,7 @@ function ReactForm () {
                 {errorMassage.email && <p style={{width: "100%", color: "red"}}>{errorMassage.email}</p>}
                 </label>
                 
-                <label className={"inputText"}>
+                <label style={{width: "100%", textAlign: "start"}}>
                     No Handphone:
                     <input 
                     minLength="9"
@@ -152,7 +151,7 @@ function ReactForm () {
                 {errorMassage.noHandphone && <p style={{width: "100%", color: "red"}}>{errorMassage.noHandphone}</p>}
                 </label>
                
-                <label>
+                <label style={{width: "100%", textAlign: "start"}}>
                     Latar Belakang Pendidikan:
                     <br/>
                     <input 
@@ -174,7 +173,7 @@ function ReactForm () {
                     />Non IT
                 </label><br/>
 
-                <label >Kelas Coding yang Dipilih:</label>
+                <label style={{width: "100%", textAlign: "start"}}>Kelas Coding yang Dipilih:</label>
                 <select name="kelas" style={{width: "100%", height: 25, borderRadius: 5, marginBottom: 5}} onChange={handleSelect}  >
                     <option value="">Pilih Salah Satu Program</option>
                     <option value="Backend">Coding Backend with Golang</option>
@@ -182,7 +181,7 @@ function ReactForm () {
                     <option value="Fullstack">Fullstack Developer</option>
                 </select>
 
-                <label>
+                <label style={{width: "100%", textAlign: "start"}}>
                     Foto Surat Kesungguhan:
                     <input 
                     type="file" 
@@ -191,12 +190,14 @@ function ReactForm () {
                     />
                 </label>
 
-                <label>
+                <label style={{width: "100%", textAlign: "start"}}>
                     Harapan Untuk Coding Bootcamp Ini:
                     <textarea name="harapan" value={data.harapan} onChange={handleInput} style={{width: "100%", height: "100px", borderRadius: 10, padding: 5}}></textarea>
                 </label>
-                <input type="submit" value="Submit" style={{color: "white",backgroundColor: "#3a811d", borderRadius: 5, width: "10%", border: "none", height: 25, marginRight: 5}}/>
-                <button onClick={resetData} style={{color: "white",backgroundColor: "#ed3833", borderRadius: 5, width: "10%", border: "none", height: 25}}>Reset</button>
+                <div style={{textAlign: "start"}}>
+                <input type="submit" value="Submit" style={{color: "white",backgroundColor: "#3a811d", borderRadius: 5, width: "20%", border: "none", height: 25, marginRight: 5}}/>
+                <input type="reset" onClick={resetData} style={{color: "white",backgroundColor: "#ed3833", borderRadius: 5, width: "20%", border: "none", height: 25}}/>
+                </div>
             </form>
         </div>
     )

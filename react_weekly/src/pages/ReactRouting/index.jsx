@@ -1,7 +1,7 @@
 import React from 'react';
-import Sidebar from '../components/Sidebar';
-import HeaderRoute from '../components/HeaderRoute';
-import BodyRoute from '../components/BodyRoute';
+import Sidebar from './components/Sidebar';
+import HeaderRoute from './components/HeaderRoute';
+import BodyRoute from './components/BodyRoute';
 import './components/Route.css';
 
 export default function ReactRouting(props) {
