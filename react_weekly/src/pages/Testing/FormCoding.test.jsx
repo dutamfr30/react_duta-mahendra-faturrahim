@@ -7,7 +7,7 @@ describe('FormCoding', () => {
         render(<FormCoding/>);
     });
 
-    test('Testing judul program', () => {
+    test('Testing judul', () => {
         render(<FormCoding/>);
         const judul = screen.getByText(/Pendaftaran Peserta Coding Bootcamp/i);
         expect(judul).toBeInTheDocument();
