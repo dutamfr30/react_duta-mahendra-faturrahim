@@ -1,0 +1,34 @@
+//Query untuk memanggil siswa yang memiliki status true
+query MyQuery($status: order_by = asc) {
+    keterangan(where: {status: {_eq: true}}) {
+      id
+    }
+  }  
+
+//Insert ke dalam tabel keterangan menggunakan mutation
+mutation MyMutation {
+    insert_keterangan(objects: {id: 5, id_anggota: 3, nilai: 90, pelajaran: "Sistem Informasi", status: true}) {
+      returning {
+        id
+        id_anggota
+        nilai
+        pelajaran
+        status
+      }
+    }
+  }
+  
+mutation MyMutation {
+    insert_keterangan(objects: {id: 6, id_anggota: 3, nilai: 55, pelajaran: "React", status: false}) {
+      returning {
+        id
+        id_anggota
+        nilai
+        pelajaran
+        status
+      }
+    }
+  }
+
+
+  
