@@ -1,0 +1,3 @@
+Surge: http://tranquil-locket.surge.sh/
+Netlify: https://duta-react-weekly.netlify.app
+Vercel: https://react-deploy-rose.vercel.app/
