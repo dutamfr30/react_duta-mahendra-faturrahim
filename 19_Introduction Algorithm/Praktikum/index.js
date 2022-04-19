@@ -1,13 +1,19 @@
-let nilai = 4;
-let bilanganPrima = [];
-for (let i = 0; i < nilai; i++) {
-    if (nilai % 1 == 0) {
-        bilanganPrima.push(i);
-        console.log("Bilangan Prima -", i);
+const bilanganPrima = (nilai) => {
+    let habisDibagi = 0;
+    for (let i = 1; i <= nilai; i++) {
+        if (nilai % i === 0) {
+            habisDibagi++;
+        }
     }
-    else if (i <= nilai) {
-        console.log("Bilangan Non Prima -", i);
+    if (habisDibagi==2){
+        console.log(nilai, " merupakan bilangan prima");
+    } else {
+        console.log(nilai, " bukan merupakan bilangan prima");
     }
+    
 }
 
-console.log("hanya bilangan prima", bilanganPrima);
+bilanganPrima(11)
+bilanganPrima(25)
+bilanganPrima(33)
+bilanganPrima(103)
